@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpaceCheeseMining
 {
-    class TestDice
+    public class TestDice : IDice
     {
         public int GetRoll()
         {

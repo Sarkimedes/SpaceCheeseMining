@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpaceCheeseMining
 {
-    interface IDice
+    public interface IDice
     {
         int GetRoll();
     }

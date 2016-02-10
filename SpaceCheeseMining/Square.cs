@@ -8,13 +8,19 @@ namespace SpaceCheeseMining
 {
     public class Square
     {
+        private static readonly Square[] CheeseSquares = new[] {new Square(1, 0), new Square(2, 0), new Square(3, 0), new Square(4, 0), new Square(5, 0), new Square(6, 0)};
+
         public Square(int x, int y)
         {
             this.X = x;
             this.Y = y;
         }
 
-        public bool HasCheese { get; set; }
+        public bool HasCheese
+        {
+            get { return CheeseSquares.Any(this.Equals); }
+        }
+
         public int X { get; set; }
         public int Y { get; set; }
 
